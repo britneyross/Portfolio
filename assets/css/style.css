@@ -35,7 +35,7 @@ body {
   h3 {
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
-    color: #4aaaa5;
+    color: rgb(100, 150, 226);
   }
   
   h1 {
@@ -50,9 +50,7 @@ body {
     font-size: 22px;
   }
   
-  /* header */
-  
-  #masthead {
+  .header {
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -61,6 +59,26 @@ body {
     color: #ffffff;
     background: #ffffff;
     border-bottom: 2px solid #cccccc;
+  }
+
+  .navbar{
+    padding: 0;
+  }
+  .nav-link{
+    padding: 0rem 1rem;
+  }
+  nav{
+    border-bottom: 2px solid #cccccc;
+  }
+  #navItems{
+    justify-content: flex-end;
+  }
+  li{
+    margin-left: 15px;
+    padding-right: 15px;
+  }
+  li:not(:last-child) { 
+    border-right: 1px solid #dddddd;
   }
   
   #logo {
@@ -74,7 +92,7 @@ body {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    background: #4aaaa5;
+    background: rgb(100, 150, 226);
   }
   
   nav {
@@ -106,7 +124,7 @@ body {
     color: #cccccc;
     text-align: center;
     background: #666666;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid rgb(100, 150, 226);
     height: 50px;
   }
   
@@ -164,7 +182,7 @@ body {
     line-height: 30px;
     color: #ffffff;
     text-align: center;
-    background: #4aaaa5;
+    background: rgb(100, 150, 226);
     border-bottom: 0;
   }
   
@@ -212,6 +230,20 @@ body {
     font-size: 18px;
     color: #ffffff;
     cursor: pointer;
-    background: #4aaaa5;
+    background: rgb(100, 150, 226);
     border: 0 none;
   }
+
+  @media screen and (max-width: 640px){
+    #logo{
+         width: 100%;
+         margin: 0;
+    }
+    #logoContainer{
+        margin: 0;
+        max-width: 100%;
+    }    
+    .navbar>.container{
+        justify-content: center;
+        margin: 10px 0;
+    }
