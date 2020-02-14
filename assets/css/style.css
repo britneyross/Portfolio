@@ -113,6 +113,20 @@ body {
   nav a:first-child {
     border-left: 0 none;
   }
+
+  @media screen and (max-width: 640px){
+    #logo{
+         width: 100%;
+         margin: 0;
+    }
+    #logoContainer{
+        margin: 0;
+        max-width: 100%;
+    }    
+    .navbar>.container{
+        justify-content: center;
+        margin: 10px 0;
+    }
   
   /* footer */
   
@@ -234,16 +248,3 @@ body {
     border: 0 none;
   }
 
-  @media screen and (max-width: 640px){
-    #logo{
-         width: 100%;
-         margin: 0;
-    }
-    #logoContainer{
-        margin: 0;
-        max-width: 100%;
-    }    
-    .navbar>.container{
-        justify-content: center;
-        margin: 10px 0;
-    }
