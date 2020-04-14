@@ -159,9 +159,9 @@ body {
   
   .work {
     position: relative;
-    float: left;
+    float: center; 
     width: 274px;
-    margin: 20px 0 25px;
+    margin: 15px 0 20px;
     overflow: auto;
   }
   
@@ -169,24 +169,25 @@ body {
     margin-right: 40px;
   }
   
-  .work img {
+   .work img {
     width: 100%;
-    border: 0 none;
+ 
+    margin-left: 10px;
     opacity: 0.8;
   }
   
   .work h3 {
     position: absolute;
-    bottom: 20px;
+    bottom: 5px;
     width: 100%;
-    padding: 15px;
-    margin-bottom: 0;
-    font-weight: 300;
-    line-height: 30px;
+    padding: 10px;
+    font-weight: 200;
+    line-height: 20px;
     color: #ffffff;
     text-align: center;
     background: rgb(100, 150, 226);
     border-bottom: 0;
+    margin: 10px;
   }
   
   .auth-image {
@@ -250,3 +251,4 @@ body {
         justify-content: center;
         margin: 10px 0;
     }
+  }
