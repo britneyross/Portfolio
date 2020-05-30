@@ -95,7 +95,7 @@ body {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    background: rgb(100, 150, 226);
+    background: #5bc0de;
   }
   
   nav {
@@ -127,7 +127,7 @@ body {
     color: #cccccc;
     text-align: center;
     background: #666666;
-    border-top: 8px solid rgb(100, 150, 226);
+    border-top: 8px solid #5bc0de;
     height: 50px;
   }
   
@@ -185,7 +185,7 @@ body {
     line-height: 20px;
     color: #ffffff;
     text-align: center;
-    background: rgb(100, 150, 226);
+    background-color: #5bc0de;
     border-bottom: 0;
     margin: 10px;
   }
@@ -234,7 +234,7 @@ body {
     font-size: 18px;
     color: #ffffff;
     cursor: pointer;
-    background: rgb(100, 150, 226);
+    background: #5bc0de;
     border: 0 none;
   }
 
