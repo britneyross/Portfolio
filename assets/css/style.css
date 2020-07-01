@@ -66,12 +66,21 @@ body {
 
   .navbar{
     padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
   }
+  #navbarHeader{
+    width: 100%;
+  }
+
   .nav-link{
     padding: 0rem 1rem;
   }
   nav{
     border-bottom: 2px solid #cccccc;
+
   }
   #navItems{
     justify-content: flex-end;
@@ -120,7 +129,11 @@ body {
   /* footer */
   
   footer {
-    padding: 30px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
     clear: both;
     font-size: 12px;
     color: #ffffff;
@@ -128,17 +141,14 @@ body {
     text-align: center;
     background: #666666;
     border-top: 8px solid #5bc0de;
-    height: 50px;
-  }
-  
-  h3, h2 {
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    border-bottom: 2px solid #eeeeee;
+    height: 40px;
   }
   
   /* main */
+
+  .auth-image {
+    padding-right: 10px;
+  }
   
   #main-container {
     padding-top: 50px;
@@ -154,48 +164,87 @@ body {
     background: #ffffff;
     border: 1px solid #dddddd;
   }
+
+  .connections {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+  }
   
   /* portfolio page */
-  
-  .work {
-    position: relative;
-    float: center; 
-    width: 274px;
-    margin: 15px 0 20px;
-    overflow: auto;
+
+  * {
+    box-sizing: border-box;
   }
   
-  .work:nth-child(even) {
-    margin-right: 40px;
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
   }
-  
-   .work img {
-    width: 100%;
- 
-    margin-left: 10px;
-    opacity: 0.8;
-  }
-  
-  .work h3 {
-    position: absolute;
-    bottom: 5px;
-    width: 100%;
-    padding: 10px;
-    font-weight: 200;
-    line-height: 20px;
-    color: #ffffff;
+
+  h3 {
     text-align: center;
-    background-color: #5bc0de;
-    border-bottom: 0;
-    margin: 10px;
+    margin-top: 10px;
   }
   
-  .auth-image {
+  
+  /* Center website */
+  .main-portfolio {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
     float: left;
-    width: 200px;
-    height: auto;
-    margin-top: 10px;
-    margin-right: 25px;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+
+  p {
+    text-align: center;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
   }
   
   /* contact page */
@@ -238,13 +287,19 @@ body {
     border: 0 none;
   }
 
+  .main-contact{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
   @media screen and (max-width: 640px){
     #logo{
          width: 100%;
          margin: 0;
     }
     #logoContainer{
-        margin: 0;
         max-width: 100%;
     }    
     .navbar>.container{
